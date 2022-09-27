@@ -1,12 +1,19 @@
 <?php
 
-class vehicule
-{
-    public $name;
-    public $speed;
-    public $color;
-    public $wheels;
-    public $type;
+class vehicule {
+    private $name;
+    private $speed;
+    private $color;
+
+    private $type;
+
+
+    public function getColor()
+    {
+        return $this->color;
+    }
+    private $wheels;
+
 
     public function __construct($name, $speed, $color, $wheels)
     {
@@ -20,11 +27,10 @@ class vehicule
     {
         if($this->wheels == 2) {
             $this->type = 'moto';
-            echo "<p> $this->name est une $this->type </p>";
         } else {
             $this->type = 'Auto';
-            echo "<p> $this->name est une $this->type </p>";
         }
+        echo "<p> $this->name est une $this->type </p>";
     }
 
 

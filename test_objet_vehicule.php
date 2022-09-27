@@ -10,6 +10,7 @@ $pasBagnole = new vehicule('vroomVroom', 180, 'Red', 2);
 //
 //}
 
+$bagnole->getColor();
 $bagnole->detect();
 $pasBagnole->detect();
 $bagnole->boost();
