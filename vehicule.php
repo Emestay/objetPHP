@@ -28,6 +28,7 @@ class vehicule
     }
 
 
+
     public function boost()
     {
         $this->speed = $this->speed + 50;
